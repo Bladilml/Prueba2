@@ -12,7 +12,7 @@
         <title>Crear Proyecto</title>
     </head>
     <body>
-        <form action="mostrar.do" method="POST">
+        <form action="#" method="POST">
             <table border="1">
                 <tbody>
                     <tr>
@@ -26,15 +26,15 @@
                     <tr>
                         <td>Region</td>
                         <td>
-                        <select name="region" id="region" onchange="buscarProvincia(this.value);">
-                            <option value="" selected>Seleccione</option>
-                        <c:forEach var="region" items="${listaRegiones}">
-                            <option value="${region.regionId}">${region.regionNombre} (${region.regionOrdinal})</option>
-                        </c:forEach>
-                        </select><br/>
+                            <select name="region" id="region" onchange="buscarProvincia(this.value);">
+                                <option value="" selected>Seleccione</option>
+                                <c:forEach var="region" items="${listaRegiones}">
+                                    <option value="${region.regionId}">${region.regionNombre} (${region.regionOrdinal})</option>
+                                </c:forEach>
+                            </select><br/>
                         </td>
                     </tr>
-                     <tr>
+                    <tr>
                         <td>Provincia</td>
                         <td>
                             <select name="provincia" id="provincia" onchange="buscarComuna(this.value);">
@@ -42,7 +42,7 @@
                             </select><br/>
                         </td>
                     </tr>
-                     <tr>
+                    <tr>
                         <td>Comuna</td>
                         <td>
                             <select name="comuna" id="comuna">
@@ -74,9 +74,10 @@
                         <td><input type="text" name="presupuestoGast" value="" /><br></td>
                     </tr>
                 </tbody>
-            </table>            
-            <input type="button" onclick="location.href='mostrarProyecto.jsp'" value="Crear Proyecto" />
-            
+            </table>   
+            <input type="submit" value="Registrar Proyecto" />
+            <input type="button" onclick="location.href = 'menu.jsp'" value="cancelar" />
+
         </form>
     </body>
 </html>
