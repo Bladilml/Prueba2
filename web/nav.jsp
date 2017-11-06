@@ -5,6 +5,7 @@
 --%>
 
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
+<%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <!DOCTYPE html>
 <html>
     <head>
@@ -12,6 +13,8 @@
         <title>JSP Page</title>
     </head>
     <body>
-        <h1>Hello World!</h1>
+       |<a href="agregarProyecto.jsp">Agregar Proyectos</a>|
+        <a href="mostrarProyecto.jsp">Mostrar Proyectos</a>|
+        <a href="">Salir</a>|
     </body>
 </html>
