@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package modelo;
+package dto;
 
 import java.sql.Date;
 
@@ -11,13 +11,13 @@ import java.sql.Date;
  *
  * @author blood
  */
-public class Proyecto {
+public class proyecto {
     private String nombre, descripcion, estado;
     private int presupuestoInicial, presupuestoGastado;
     private Date fechaInicio;
-    private Comuna comuna;
+    private comunas comuna;
 
-    public Proyecto(String nombre, String descripcion, String estado, int presupuestoInicial, int presupuestoGastado, Date fechaInicio, Comuna comuna) {
+    public proyecto(String nombre, String descripcion, String estado, int presupuestoInicial, int presupuestoGastado, Date fechaInicio, comunas comuna) {
         this.nombre = nombre;
         this.descripcion = descripcion;
         this.estado = estado;
@@ -75,11 +75,11 @@ public class Proyecto {
         this.fechaInicio = fechaInicio;
     }
 
-    public Comuna getComuna() {
+    public comunas getComuna() {
         return comuna;
     }
 
-    public void setComuna(Comuna comuna) {
+    public void setComuna(comunas comuna) {
         this.comuna = comuna;
     }
     
