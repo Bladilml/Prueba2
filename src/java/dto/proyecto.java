@@ -13,14 +13,15 @@ import java.sql.Date;
  */
 public class proyecto {
     private String nombre, descripcion, estado;
-    private int presupuestoInicial, presupuestoGastado;
+    private int id, presupuestoInicial, presupuestoGastado;
     private Date fechaInicio;
     private comunas comuna;
 
-    public proyecto(String nombre, String descripcion, String estado, int presupuestoInicial, int presupuestoGastado, Date fechaInicio, comunas comuna) {
+    public proyecto(String nombre, String descripcion, String estado, int id, int presupuestoInicial, int presupuestoGastado, Date fechaInicio, comunas comuna) {
         this.nombre = nombre;
         this.descripcion = descripcion;
         this.estado = estado;
+        this.id = id;
         this.presupuestoInicial = presupuestoInicial;
         this.presupuestoGastado = presupuestoGastado;
         this.fechaInicio = fechaInicio;
@@ -49,6 +50,14 @@ public class proyecto {
 
     public void setEstado(String estado) {
         this.estado = estado;
+    }
+
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
     }
 
     public int getPresupuestoInicial() {
@@ -82,6 +91,4 @@ public class proyecto {
     public void setComuna(comunas comuna) {
         this.comuna = comuna;
     }
-    
-    
 }
