@@ -10,7 +10,7 @@ package dto;
  * @author blood
  */
 public interface proyectoDAO {
-    public boolean crearProyecto(proyecto nvoProyecto);
+    public boolean createProyecto(proyecto nvoProyecto);
     public proyecto read(int id);
     public boolean update(proyecto proyecto);
 }
