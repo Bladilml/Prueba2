@@ -11,4 +11,6 @@ package dto;
  */
 public interface proyectoDAO {
     public boolean crearProyecto(proyecto nvoProyecto);
+    public proyecto read(int id);
+    public boolean update(proyecto proyecto);
 }
