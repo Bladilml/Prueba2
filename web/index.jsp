@@ -13,7 +13,7 @@
         <title>Bienvenido a MTT</title>
     </head>
     <body>
-        <form action="#">
+        <form action="login.do" method="POST">
             Usuario:<br>
             <input type="text" name="username">
             <br>
